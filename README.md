@@ -13,6 +13,12 @@ and type
 
 `pip install -e .`
 
+This package requires the following packages
+- numpy
+- matplotlib
+
+Packages required updates!
+
 ### Copyright
 
 Copyright (c) 2021, Foley Lab @ William Paterson University
