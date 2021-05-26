@@ -15,8 +15,7 @@ and type
 
 ### Copyright
 
-Copyright (c) 2021, Foley Lab
-
+Copyright (c) 2021, Foley Lab @ William Paterson University
 
 #### Acknowledgements
  
