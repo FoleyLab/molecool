@@ -6,6 +6,12 @@ molecool
 
 
 A python package for analyzing and visualizing molecular files.  For molssi workshop.
+This package has a functions module.
+
+This repository is currently under development.  To do a development install, download this repository
+and type
+
+`pip install -e .`
 
 ### Copyright
 
