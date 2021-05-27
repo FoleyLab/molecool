@@ -5,6 +5,14 @@ A python package for analyzing and visualizing molecular files.  For molssi work
 Handles the primary functions
 """
 
+### new functions go brrrr
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
+from mpl_toolkits.mplot3d import Axes3D
+
+
 
 def canvas(with_attribution=True):
     """
@@ -37,15 +45,6 @@ def zen(with_attribution=True):
         quote += """ By Time Peters """
         
     print(quote)
-
-
-### new functions go brrrr
-import os
-import numpy as np
-import matplotlib.pyplot as plt
-
-from mpl_toolkits.mplot3d import Axes3D
-
 
 def calculate_distance(rA, rB):
     # This function calculates the distance between two points given as numpy arrays.
