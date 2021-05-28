@@ -74,14 +74,12 @@ def calculate_center_of_mass(symbols, coordinates):
     ### make sure mass is greater than 0
     assert M > 0.0
 
-    ### initialize R vector
-    R = np.array([0.,0.,0.])
-    ### loop through coordinates and symbols list
-    for i in range(0, len(symbols)):
-        # get mass of atom i
-        m_i = atomic_weights[symbols[i]]
-        # add mass-weighted coordinate of atom i to R
-        R += 1/M * m_i * coordinates[i,:]
 
-    # return center of mass!
-    return R
+    mass_array = np.zeros([len(symbols), 1])
+
+    for i in range(len(symbols)):
+        mass_array[i] = atomic_weights[symbols[i]]
+   
+    center_of_mass = sum(coordinates * mass_array) / M
+   
+    return center_of_mass
